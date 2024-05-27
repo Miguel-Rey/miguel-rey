@@ -60,12 +60,12 @@ export const ProjectTile = (props: Project) => {
       ])}
     >
       <Link href={link} target="_blank" className={cx(["relative group"])}>
-        <div className="absolute inset-0 bg-black transition-opacity duration-500 opacity-0 group-hover:opacity-20 z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-black transition-opacity duration-500 opacity-20 lg:opacity-0 group-hover:opacity-20 z-10 pointer-events-none" />
         <div
           className={cx([
             "absolute left-0 bottom-0 z-10 p-4 w-full",
             "transition-opacity duration-200 delay-[300ms] ease-in-out",
-            "opacity-0 group-hover:opacity-100 group-focus:opacity-100",
+            "group-hover:opacity-100 group-focus:opacity-100 lg:opacity-0",
           ])}
         >
           <h2 className="text-white text-xl">{title}</h2>

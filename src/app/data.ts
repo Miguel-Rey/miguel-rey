@@ -9,6 +9,21 @@ import SaffronImage from "@/assets/saffron.png";
 
 export const PROJECTS = [
   {
+    title: "Ouster",
+    link: "https://ouster.com",
+    image: OusterImage,
+  },
+  {
+    title: "Melia",
+    link: "https://www.melia.com",
+    image: MeliaImage,
+  },
+  {
+    title: "Saffron",
+    link: "https://saffron-consultants.com/",
+    image: SaffronImage,
+  },
+  {
     title: "Amadee",
     link: "https://amadee20.com",
     image: AmadeeImage,
@@ -17,16 +32,6 @@ export const PROJECTS = [
     title: "Ikea Comunidad Family",
     link: "https://thefwa.com/cases/ikea-comunidad-family",
     image: IkeaImage,
-  },
-  {
-    title: "Melia",
-    link: "https://www.melia.com",
-    image: MeliaImage,
-  },
-  {
-    title: "Ouster",
-    link: "https://ouster.com",
-    image: OusterImage,
   },
   {
     title: "Years of Culture",
@@ -42,10 +47,5 @@ export const PROJECTS = [
     title: "Squared Circles",
     link: "https://squaredcircles.com",
     image: SquaredCircleImage,
-  },
-  {
-    title: "Saffron",
-    link: "https://saffron-consultants.com/",
-    image: SaffronImage,
   },
 ];
