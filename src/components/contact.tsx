@@ -26,7 +26,7 @@ const ContactItem = (props: ContactItemProps) => {
 
 export const Contact = () => {
   return (
-    <nav className="px-12">
+    <nav className="px-6 lg:px-12">
       <ul className="flex items-center gap-4">
         <ContactItem
           text="Email"
