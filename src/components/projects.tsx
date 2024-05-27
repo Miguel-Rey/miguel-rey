@@ -55,11 +55,12 @@ export const ProjectTile = (props: Project) => {
     <Slide
       className={cx([
         "overflow-hidden rounded-sm w-full lg:w-[47%] xl:w-[49%]",
-        "hover:scale-[0.98] transition-transform duration-[700ms] ease-in-out",
+        "transition-transform duration-[700ms] ease-in-out",
         "hover:scale-[0.98] focus-within:scale-[0.98]",
       ])}
     >
       <Link href={link} target="_blank" className={cx(["relative group"])}>
+        <div className="absolute inset-0 bg-black transition-opacity duration-500 opacity-0 group-hover:opacity-20 z-10 pointer-events-none" />
         <div
           className={cx([
             "absolute left-0 bottom-0 z-10 p-4 w-full",
