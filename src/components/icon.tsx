@@ -1,12 +1,14 @@
 import Email from "@/icons/email.svg";
 import Linkedin from "@/icons/linkedin.svg";
 import Github from "@/icons/github.svg";
+import ArrowRight from "@/icons/arrow-right.svg";
 import { cx } from "@/utils";
 
 const icons = {
   email: Email,
   linkedin: Linkedin,
   github: Github,
+  "arrow-right": ArrowRight,
 } as const;
 
 const sizes = {
