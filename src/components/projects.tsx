@@ -36,13 +36,19 @@ export const Projects = (props: Props) => {
           className={cx([
             "overflow-hidden rounded-sm w-1/2 lg:w-[47%] xl:w-[49%]",
             "hover:scale-[0.98] transition-transform duration-[700ms] ease-in-out",
+            "hover:scale-[0.98] focus-within:scale-[0.98]",
           ])}
         >
-          <Link href={project.link} target="_blank" className="relative group">
+          <Link
+            href={project.link}
+            target="_blank"
+            className={cx(["relative group"])}
+          >
             <div
               className={cx([
                 "absolute left-0 bottom-0 z-10 p-4 w-full",
-                "transition-opacity duration-200 delay-[300ms] opacity-0 group-hover:opacity-100",
+                "transition-opacity duration-200 delay-[300ms] ease-in-out",
+                "opacity-0 group-hover:opacity-100 group-focus:opacity-100",
               ])}
             >
               <h2 className="text-white text-xl">{project.title}</h2>
@@ -53,7 +59,8 @@ export const Projects = (props: Props) => {
               className={cx([
                 "w-full max-h-[600px] bg-gray-200 object-cover",
                 "aspect-square lg:aspect-[1.2] xl:aspect-video",
-                "group-hover:scale-[1.06] transition-transform duration-[700ms] ease-in-out",
+                "transition-transform duration-[700ms] ease-in-out",
+                "group-focus:scale-[1.06] group-hover:scale-[1.06] ",
               ])}
             />
           </Link>

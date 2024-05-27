@@ -3,7 +3,9 @@ import OusterImage from "@/assets/ouster.png";
 import AmadeeImage from "@/assets/amadee.png";
 import IkeaImage from "@/assets/ikea.png";
 import YearsOfCultureImage from "@/assets/years-of-culture.jpeg";
-import PstImage from "@/assets/pst.png";
+import SquaredCircleImage from "@/assets/squared-circles.png";
+import PstImage from "@/assets/pst.jpeg";
+import SaffronImage from "@/assets/saffron.png";
 
 export const PROJECTS = [
   {
@@ -39,6 +41,11 @@ export const PROJECTS = [
   {
     title: "Squared Circles",
     link: "https://squaredcircles.com",
-    image: PstImage,
+    image: SquaredCircleImage,
+  },
+  {
+    title: "Saffron",
+    link: "https://saffron-consultants.com/",
+    image: SaffronImage,
   },
 ];
