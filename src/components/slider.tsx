@@ -14,10 +14,8 @@ const Slider = React.forwardRef<Shape, Props>((props, ref) => {
     <Splide
       ref={ref}
       options={{
-        type: "fade",
         pagination: false,
         arrows: false,
-        autoHeight: true,
         ...options,
       }}
       {...rest}
