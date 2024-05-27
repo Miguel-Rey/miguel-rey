@@ -1,3 +1,4 @@
+import { PROJECTS } from "@/app/data";
 import { Contact } from "@/components/contact";
 import { Projects } from "@/components/projects";
 import { Typewritter } from "@/components/typewritter";
@@ -11,7 +12,7 @@ export default function Home() {
 
       <div className="flex-1 flex flex-col justify-end gap-6">
         <Contact />
-        <Projects />
+        <Projects projects={PROJECTS} />
       </div>
     </main>
   );

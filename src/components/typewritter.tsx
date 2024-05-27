@@ -7,53 +7,18 @@ import TypeIt, { TypeItProps } from "typeit-react";
 const MESSAGES = [
   {
     text: "Hey 👋",
-    options: {
-      speed: 50,
-      deleteSpeed: 25,
-      nextStringDelay: 3000,
-      breakLines: false,
-      lifeLike: false,
-    },
   },
   {
     text: "I'm Miguel, a developer based in Madrid.",
-    options: {
-      speed: 50,
-      deleteSpeed: 25,
-      nextStringDelay: 3000,
-      breakLines: false,
-      lifeLike: false,
-    },
   },
   {
     text: "I love creating digital products. With a focus on detail",
-    options: {
-      speed: 50,
-      deleteSpeed: 25,
-      nextStringDelay: 3000,
-      breakLines: false,
-      lifeLike: false,
-    },
   },
   {
     text: "Check some of my projects below!",
-    options: {
-      speed: 50,
-      deleteSpeed: 25,
-      nextStringDelay: 3000,
-      breakLines: false,
-      lifeLike: false,
-    },
   },
   {
     text: "Or say hi",
-    options: {
-      speed: 50,
-      deleteSpeed: 25,
-      nextStringDelay: 3000,
-      breakLines: false,
-      lifeLike: false,
-    },
   },
 ];
 

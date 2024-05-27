@@ -10,12 +10,10 @@ const icons = {
 } as const;
 
 const sizes = {
-  "4": "w-4 h-4",
-  "5": "w-5 h-5",
-  "6": "w-6 h-6",
-  "8": "w-8 h-8",
-  "12": "w-12 h-12",
-  "16": "w-16 h-16",
+  "4": "size-4",
+  "5": "size-5",
+  "6": "size-6",
+  "8": "size-8",
 } as const;
 
 export type IconName = keyof typeof icons;
@@ -26,8 +24,8 @@ type Props = {
   size?: IconSize;
 };
 
-export function Icon(props: Props & React.ComponentPropsWithRef<"span">) {
-  const { name, size = "8", ...rest } = props;
+export function Icon(props: Props & React.ComponentProps<"span">) {
+  const { name, size = "4", ...rest } = props;
 
   const Component = icons[name];
 
