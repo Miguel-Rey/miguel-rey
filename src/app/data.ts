@@ -26,7 +26,7 @@ const typewritter: TypewritterMessage[] = [
     delay: 1000,
   },
   {
-    text: "Check some of my projects below!",
+    text: "Check out some of my projects below!",
     extend:
       " Or feel free to <a class='typeit-link' href='mailto:miguelreymallen@gmail.com'>say hi</a>.",
     delay: 5000,
