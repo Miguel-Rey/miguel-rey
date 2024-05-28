@@ -45,9 +45,7 @@ export const TypewritterItem = (props: Props) => {
             .pause(1500)
             .delete(correction.length)
             .pause(500)
-            .type(correction)
-            .pause(150)
-            .type(" 😅")
+            .type(`${correction} 😅`)
             .exec(onComplete);
         } else if (extend) {
           instance.type(text).pause(1250).type(extend).exec(onComplete);

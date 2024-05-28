@@ -23,7 +23,7 @@ const typewritter: TypewritterMessage[] = [
   {
     text: "I love creating digital products, with a focus on dteail.",
     correction: "detail.",
-    delay: 2000,
+    delay: 1000,
   },
   {
     text: "Check some of my projects below!",
