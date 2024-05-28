@@ -2,29 +2,24 @@
 
 import React from "react";
 import { Shape, Slide, Slider } from "@/components/slider";
-import { TypewritterItem } from "@/components/typewritter/item";
+import {
+  TypewritterItem,
+  TypewritterMessage,
+} from "@/components/typewritter/item";
 
-const MESSAGES = [
-  {
-    text: "Hey 👋",
-  },
-  {
-    text: "I'm Miguel, a developer based in Madrid.",
-  },
-  {
-    text: "I love creating digital products, with a focus on detail",
-  },
-  {
-    text: "Check some of my projects below!",
-  },
-  {
-    text: "Or say hi",
-  },
-];
+type Props = {
+  messages: TypewritterMessage[];
+};
 
-export const Typewritter = () => {
+export const Typewritter = (props: Props) => {
+  const { messages } = props;
+
   const [activeSlide, setActiveSlide] = React.useState(0);
   const sliderRef = React.useRef<Shape>(null);
+
+  if (messages.length === 0) {
+    return null;
+  }
 
   return (
     <Slider
@@ -39,15 +34,15 @@ export const Typewritter = () => {
         setActiveSlide(splide.Components.Controller.getIndex())
       }
     >
-      {MESSAGES.map((message, index) => (
+      {messages.map((message, index) => (
         <Slide key={index}>
           <TypewritterItem
-            text={message.text}
+            {...message}
             active={index === activeSlide}
             onComplete={() => {
               setTimeout(() => {
                 sliderRef.current?.go(">");
-              }, 2000);
+              }, message.delay);
             }}
           />
         </Slide>

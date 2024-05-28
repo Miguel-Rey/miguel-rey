@@ -3,7 +3,7 @@ import { Contact } from "@/components/contact";
 import { Projects } from "@/components/projects";
 import { Typewritter } from "@/components/typewritter";
 
-const { projects, contact } = data;
+const { typewritter, projects, contact } = data;
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <h1 className="sr-only">Miguel Rey</h1>
 
       <div className="p-6 max-w-lg lg:p-12 h-56">
-        <Typewritter />
+        <Typewritter messages={typewritter} />
       </div>
 
       <div className="lg:flex-1 flex flex-col justify-end gap-6">

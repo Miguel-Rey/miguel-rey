@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .typeit-link {
+    @apply transition-colors duration-500 text-gray-700 underline hover:text-gray-400;
+  }
+}
