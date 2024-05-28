@@ -1,11 +1,11 @@
-import MeliaImage from "@/assets/melia.png";
-import OusterImage from "@/assets/ouster.png";
-import AmadeeImage from "@/assets/amadee.png";
-import IkeaImage from "@/assets/ikea.png";
-import YearsOfCultureImage from "@/assets/years-of-culture.jpeg";
-import SquaredCircleImage from "@/assets/squared-circles.png";
-import PstImage from "@/assets/pst.jpeg";
-import SaffronImage from "@/assets/saffron.png";
+import MeliaImage from "@/images/melia.jpg";
+import OusterImage from "@/images/ouster.jpg";
+import AmadeeImage from "@/images/amadee.jpg";
+import IkeaImage from "@/images/ikea.jpg";
+import YearsOfCultureImage from "@/images/years-of-culture.jpg";
+import SquaredCircleImage from "@/images/squared-circles.jpg";
+import PstImage from "@/images/pst.jpg";
+import SaffronImage from "@/images/saffron.jpg";
 
 export const PROJECTS = [
   {

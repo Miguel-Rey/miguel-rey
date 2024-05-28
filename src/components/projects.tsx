@@ -56,7 +56,7 @@ export const ProjectTile = (props: Project) => {
       className={cx([
         "overflow-hidden rounded-sm w-full lg:w-[47%] xl:w-[49%]",
         "transition-transform duration-[700ms] ease-in-out",
-        "hover:scale-[0.98] focus-within:scale-[0.98]",
+        "hover:scale-[0.98]",
       ])}
     >
       <Link href={link} target="_blank" className={cx(["relative group"])}>
@@ -73,6 +73,7 @@ export const ProjectTile = (props: Project) => {
         <Image
           src={image}
           alt={title}
+          placeholder="blur"
           className={cx([
             "w-full max-h-[600px] bg-gray-200 object-cover",
             "aspect-square lg:aspect-[1.2] xl:aspect-video",
