@@ -2,7 +2,7 @@ import Email from "@/icons/email.svg";
 import Linkedin from "@/icons/linkedin.svg";
 import Github from "@/icons/github.svg";
 import ArrowRight from "@/icons/arrow-right.svg";
-import { cx } from "@/utils";
+import { cx } from "@/utils/cva";
 
 const icons = {
   email: Email,

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Icon, IconName } from "@/components/icon";
-import { cx } from "@/utils";
+import { cx } from "@/utils/cva";
 
 export type ContactItem = {
   label: string;

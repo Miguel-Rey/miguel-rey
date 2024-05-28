@@ -3,7 +3,7 @@
 import { Shape, Slide, Slider } from "@/components/slider";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
-import { cx } from "@/utils";
+import { cx } from "@/utils/cva";
 import React from "react";
 import { Icon } from "@/components/icon";
 
