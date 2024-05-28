@@ -1,5 +1,5 @@
-import { type ContactItem } from "@/components/contact";
-import { type Project } from "@/components/projects";
+import { type Props as ContactItem } from "@/components/contact/item";
+import { type Props as Project } from "@/components/projects/card";
 
 import MeliaImage from "@/images/melia.jpg";
 import OusterImage from "@/images/ouster.jpg";

@@ -1,8 +1,8 @@
 "use client";
 
-import { Shape, Slide, Slider } from "@/components/slider";
 import React from "react";
-import TypeIt, { TypeItProps } from "typeit-react";
+import { Shape, Slide, Slider } from "@/components/slider";
+import { TypewritterItem } from "@/components/typewritter/item";
 
 const MESSAGES = [
   {
@@ -12,7 +12,7 @@ const MESSAGES = [
     text: "I'm Miguel, a developer based in Madrid.",
   },
   {
-    text: "I love creating digital products. With a focus on detail",
+    text: "I love creating digital products, with a focus on detail",
   },
   {
     text: "Check some of my projects below!",
@@ -21,41 +21,6 @@ const MESSAGES = [
     text: "Or say hi",
   },
 ];
-
-type Props = {
-  text: string;
-  active: boolean;
-  onComplete: () => void;
-};
-
-export const TypewritterItem = (props: Props) => {
-  const { text, active, onComplete } = props;
-  const [instance, setInstance] = React.useState<TypeItProps>();
-
-  React.useEffect(() => {
-    if (!instance) return;
-
-    if (active) {
-      instance.unfreeze();
-    } else {
-      instance.freeze();
-    }
-  }, [active, instance]);
-
-  return (
-    <TypeIt
-      className="text-4xl font-semibold"
-      getBeforeInit={(instance) => {
-        instance.type(text).exec(onComplete);
-        return instance;
-      }}
-      getAfterInit={(instance) => {
-        setInstance(instance as unknown as TypeItProps);
-        return instance;
-      }}
-    />
-  );
-};
 
 export const Typewritter = () => {
   const [activeSlide, setActiveSlide] = React.useState(0);
