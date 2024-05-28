@@ -37,7 +37,7 @@ export const Contact = () => {
         <ContactItem
           text="Linkedin"
           icon="linkedin"
-          link="mailto:miguelreymallen@gmail.com"
+          link="https://www.linkedin.com/in/miguelreymallen"
         />
         <ContactItem
           text="Github"
