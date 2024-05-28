@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { Icon, IconName } from "@/components/icon";
+import { cx } from "@/utils";
 
-type ContactItemProps = React.ComponentProps<"li"> & {
-  text: string;
+export type ContactItem = {
+  label: string;
   icon: IconName;
   link: string;
 };
 
+type ContactItemProps = React.ComponentProps<"li"> & ContactItem;
+
 const ContactItem = (props: ContactItemProps) => {
-  const { text, icon, link, ...rest } = props;
+  const { label, icon, link, ...rest } = props;
 
   return (
     <li {...rest}>
@@ -18,32 +21,32 @@ const ContactItem = (props: ContactItemProps) => {
         className="flex transition-colors duration-300 text-black hover:text-gray-500"
       >
         <Icon name={icon} size="5" />
-        <span className="sr-only">{text}</span>
+        <span className="sr-only">{label}</span>
       </Link>
     </li>
   );
 };
+type Props = {
+  items: ContactItem[];
+};
 
-export const Contact = () => {
+export const Contact = (props: Props) => {
+  const { items } = props;
+
+  if (!items.length) return null;
+
   return (
     <nav className="px-6 lg:px-12">
       <ul className="flex items-center gap-4">
-        <ContactItem
-          text="Email"
-          icon="email"
-          link="mailto:miguelreymallen@gmail.com"
-          className="translate-y-[0.125rem]"
-        />
-        <ContactItem
-          text="Linkedin"
-          icon="linkedin"
-          link="https://www.linkedin.com/in/miguelreymallen"
-        />
-        <ContactItem
-          text="Github"
-          icon="github"
-          link="https://github.com/Miguel-Rey"
-        />
+        {items.map((item, index) => (
+          <ContactItem
+            key={index}
+            {...item}
+            className={cx({
+              "translate-y-[0.125rem]": item.label === "Email", // visual correction of email icon
+            })}
+          />
+        ))}
       </ul>
     </nav>
   );

@@ -1,3 +1,6 @@
+import { type ContactItem } from "@/components/contact";
+import { type Project } from "@/components/projects";
+
 import MeliaImage from "@/images/melia.jpg";
 import OusterImage from "@/images/ouster.jpg";
 import AmadeeImage from "@/images/amadee.jpg";
@@ -7,7 +10,7 @@ import SquaredCircleImage from "@/images/squared-circles.jpg";
 import PstImage from "@/images/pst.jpg";
 import SaffronImage from "@/images/saffron.jpg";
 
-export const PROJECTS = [
+const projects: Project[] = [
   {
     title: "Ouster",
     link: "https://ouster.com",
@@ -49,3 +52,28 @@ export const PROJECTS = [
     image: SquaredCircleImage,
   },
 ];
+
+const contact: ContactItem[] = [
+  {
+    label: "Email",
+    icon: "email",
+    link: "mailto:miguelreymallen@gmail.com",
+  },
+  {
+    label: "Linkedin",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/miguelreymallen",
+  },
+  {
+    label: "Github",
+    icon: "github",
+    link: "https://github.com/Miguel-Rey",
+  },
+];
+
+const data = {
+  projects,
+  contact,
+};
+
+export default data;

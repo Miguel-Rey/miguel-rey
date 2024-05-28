@@ -7,7 +7,7 @@ import { cx } from "@/utils";
 import React from "react";
 import { Icon } from "@/components/icon";
 
-type Project = {
+export type Project = {
   title: string;
   link: string;
   image: StaticImageData;
