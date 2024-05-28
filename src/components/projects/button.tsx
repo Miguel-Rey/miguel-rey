@@ -31,6 +31,10 @@ export const ProjectButton = (props: Props) => {
           "rotate-180 -translate-x-[0.0625rem]": !isNext,
         })}
       />
+
+      <span className="sr-only">
+        {isNext ? "next slide" : "previous slide"}
+      </span>
     </button>
   );
 };

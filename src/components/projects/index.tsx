@@ -22,11 +22,11 @@ export const Projects = (props: Props) => {
         <ProjectButton isNext onClick={() => sliderRef.current?.go(">")} />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:hidden">
+      <ul className="grid grid-cols-2 gap-4 lg:hidden">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
-      </div>
+      </ul>
 
       <Slider
         ref={sliderRef}
