@@ -10,7 +10,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col lg:justify-between py-4 lg:py-8">
       <h1 className="sr-only">Miguel Rey</h1>
 
-      <div className="p-6 max-w-lg lg:p-12 h-48">
+      <div className="p-6 max-w-lg lg:p-12 h-52">
         <Typewritter messages={typewritter} />
       </div>
 
